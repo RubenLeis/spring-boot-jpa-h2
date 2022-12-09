@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.TestPropertySource;
 
-import afundacion.springboot.repositories.CityRepository;
+//import afundacion.springboot.repositories.CityRepository;
 
 
 /**
@@ -20,21 +20,21 @@ import afundacion.springboot.repositories.CityRepository;
  * @author 
  *
  */
-@SpringBootTest
-@TestPropertySource(locations = "classpath:db-test.properties")
-class CityServiceMockAnnotationTest {
-
-    @MockBean
-    CityRepository cityRepository;
-
-    @Autowired
-    CityService cityService;
-
-    @Test
-    void testFindAllEmptyResponse() {
-        when(cityRepository.findAll()).thenReturn(Collections.emptyList());
-
-        assertThat(cityRepository.findAll()).isEmpty();
-    }
-
-}
+//@SpringBootTest
+//@TestPropertySource(locations = "classpath:db-test.properties")
+//class CityServiceMockAnnotationTest {
+//
+//    @MockBean
+//    CityRepository cityRepository;
+//
+//    @Autowired
+//    CityService cityService;
+//
+//    @Test
+//    void testFindAllEmptyResponse() {
+//        when(cityRepository.findAll()).thenReturn(Collections.emptyList());
+//
+//        assertThat(cityRepository.findAll()).isEmpty();
+//    }
+//
+//}
