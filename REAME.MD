@@ -15,19 +15,40 @@
 * src/test/resources: contiene la configuración de la BBDD para test y un script para dar de alta datos de prueba
 * pom.xml. Fichero con todas las dependencias de Spring requeridas para nuestro proyecto
 
+# Configuración
+
+Las siguientes instrucciones son validas para IntelliJ
+
+## JDK 11
+
+Es necesario que descarguemos la JDK 11 (zip) en nuestro equipo, en la ubicación que gustemos y lo descomprimamos.
+
+https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_windows-x64_bin.zip
+https://jdk.java.net/archive/
+
+Debemos añadir esta JDK en Intellij y establecerse a nuestro proyecto
+
+https://www.baeldung.com/intellij-change-java-version
+
+
 # Ejecución
+
+Las siguientes instrucciones son validas para el IDE IntelliJ
 
 ## Arrancar proyecto
 Botón derecho sobre clase StartApp > Run as Java Application
 
+¿Problemas con las versiones en ejecución?
+https://stackoverflow.com/questions/59601077/intellij-errorjava-error-release-version-5-not-supported
+
 ## Test
-Botón derecho sobre proyecto  > Run as Maven Test
+Botón derecho sobre proyecto  > Run All Test
 
 # Tarea
 Hay unos test comentados para la entidad City. Nos interesa ponerlos en marcha y exponer su API correspondiente.
 
 * Descomenta los test
-* Crear las clases o lo que sea necesario para que estos funcionen
+* Crear las clases o lo que sea necesario para que estos compilen y además funcionen
 
 
 
