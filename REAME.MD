@@ -60,13 +60,13 @@ Los test son estos:
 * CityServiceTest
 
 Pasos:
-* Descomenta los test. Fallará la aplicación por númerosos errores de compilaciones. 
-Debemos crear las clases necesarias para nuestras diversas capas: entitiy, repositorio, modelo, service y controller.
+* Descomenta los test. Fallará la aplicación por númerosos errores de compilación. 
+* Debemos crear las clases necesarias para City para nuestras diversas capas: entitiy, repositorio, modelo, service y controller.
 * Estas clases serán muy parecidas a las ya existentes para Country, solo que utilizarán City en su lugar.
 * Los atributos de la clase City serán los que nos indique la BBDD: test-h2-cities.sql 
 
 
-Como resultado final tendremos un nuevo API disponible para ser invocado
+Como resultado final tendremos un nuevo API disponible para ser invocado.
 
 ## Rúbrica
 Como hay 4 test, cada test vale un 25% de la nota final de este ejercicio. Si falla el test recibirás un 0 y si funciona el 25%.
