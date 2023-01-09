@@ -45,10 +45,35 @@ https://stackoverflow.com/questions/59601077/intellij-errorjava-error-release-ve
 Botón derecho sobre proyecto  > Run All Test
 
 # Tarea
-Hay unos test comentados para la entidad City. Nos interesa ponerlos en marcha y exponer su API correspondiente.
+Hasta ahora teníamos un API para la entidad Country.
+El objetivo es crear un nuevo API muy semejante a la anterior, pero para la entidad City
 
-* Descomenta los test
-* Crear las clases o lo que sea necesario para que estos compilen y además funcionen
+Hay unos test comentados para comprobar que funciona todo los relacionado con City 
+Nos interesa ponerlos en marcha, para asegurarnos que el flujo de nuestra 
+aplicación funciona bien desde el Controlador, hasta el repositorio pasando
+por el Servicio.
+
+Los test son estos:
+* CityRestControllerTest
+* CityRepositoryTest
+* CityServiceMockAnnotationTest
+* CityServiceTest
+
+Pasos:
+* Descomenta los test. Fallará la aplicación por númerosos errores de compilaciones. 
+Debemos crear las clases necesarias para nuestras diversas capas: entitiy, repositorio, modelo, service y controller.
+* Estas clases serán muy parecidas a las ya existentes para Country, solo que utilizarán City en su lugar.
+* Los atributos de la clase City serán los que nos indique la BBDD: test-h2-cities.sql 
+
+
+Como resultado final tendremos un nuevo API disponible para ser invocado
+
+## Rúbrica
+Como hay 4 test, cada test vale un 25% de la nota final de este ejercicio. Si falla el test recibirás un 0 y si funciona el 25%.
+
+Este ejercicio tiene un peso de un 15% en la nota final de prácticas.
+
+
 
 
 
